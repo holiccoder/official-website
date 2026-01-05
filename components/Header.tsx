@@ -5,14 +5,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import Image from 'next/image'
+import WebsiteLogo from '@/app/assets/logo-cornflower-blue.png'
+import WebsiteLightLogo from '@/app/assets/logo-light.png'
+import {useTranslations} from "next-intl";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ["Home", "Experience", "Projects", "Services", "Tech Stack", "Contact"];
+  const t = useTranslations('home');
 
-  return (
+  const menuItems = t.raw('navigation');
+
+    return (
     <div className="fixed top-0 left-0 right-0 flex justify-center z-50 pt-4 px-4">
       <motion.header
         initial={{ opacity: 0, y: -20 }}
@@ -36,6 +44,7 @@ const Header = () => {
 
         {/* Desktop Navigation - Centered */}
         <div className="hidden md:flex flex-1 justify-center">
+            { theme === 'dark' ? <Image src={WebsiteLightLogo} alt={'logo'} width={100} className={'mr-6'} />: <Image src={WebsiteLogo} alt={'logo'} width={100} className={'mr-6'} />}
           <nav className="flex items-center gap-8 text-sm md:text-base">
             {menuItems.map((item) => (
               <a
@@ -47,9 +56,10 @@ const Header = () => {
               </a>
             ))}
           </nav>
+          <LanguageSwitcher />
         </div>
 
-        {/* Dark Mode Toggle - Right side in Mobile, Normal for Desktop */}
+
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="p-2 md:ml-2 ml-auto rounded-full hover:bg-muted transition-colors"

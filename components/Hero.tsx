@@ -2,21 +2,20 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { getCalApi } from "@calcom/embed-react";
 import Image from "next/image";
 import profilePic from "@/app/assets/karan-ghibli.png";
 
 const Hero = () => {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "introductory-meet" });
-      cal("floatingButton", {
-        calLink: "karanshingde/introductory-meet",
-        config: { layout: "month_view" },
-      });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async function () {
+  //     const cal = await getCalApi({ namespace: "introductory-meet" });
+  //     cal("floatingButton", {
+  //       calLink: "karanshingde/introductory-meet",
+  //       config: { layout: "month_view" },
+  //     });
+  //     cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+  //   })();
+  // }, []);
 
   const phrases = [
     "Building AI systems",

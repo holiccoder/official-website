@@ -14,7 +14,6 @@ export default function Home() {
     <main className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-100 bg-pattern">
       <Header />
       <Hero />
-      <About />
       <Experience />
       <Projects />
       <Services />
