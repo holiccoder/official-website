@@ -2,20 +2,26 @@
 
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
-import { FaPython, FaDocker, FaDatabase, FaCloud } from "react-icons/fa"
-import { SiTypescript, SiNextdotjs, SiFastapi, SiPytorch, SiHuggingface, SiLangchain } from "react-icons/si"
+import { FaPython, FaHtml5, FaCss3Alt, FaWordpress, FaShopify, FaReact } from "react-icons/fa"
+import { SiTypescript, SiNextdotjs, SiLaravel, SiMysql, SiGraphql, SiTailwindcss } from "react-icons/si"
+import { RiJavascriptFill, RiPhpFill, RiVuejsFill } from "react-icons/ri";
 
 const techStack = [
-  { name: "Python", icon: FaPython, color: "#3776AB" },
+  { name: "HTML", icon: FaHtml5, color: "#E34F26" },
+  { name: "CSS", icon: FaCss3Alt, color: "#1572B6" },
+  { name: "Javascript", icon: RiJavascriptFill, color: "#009688" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+  { name: "PHP", icon: RiPhpFill, color: "#777BB4" },
+  { name: "Python", icon: FaPython, color: "#3776AB" },
   { name: "Next.js", icon: SiNextdotjs, color: { light: "#000000", dark: "#FFFFFF" } },
-  { name: "Database", icon: FaDatabase, color: "#336791" },
-  { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-  { name: "Docker", icon: FaDocker, color: "#2496ED" },
-  { name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
-  { name: "HuggingFace", icon: SiHuggingface, color: "#FFD21E" },
-  { name: "LangChain", icon: SiLangchain, color: { light: "#000000", dark: "#FFFFFF" } },
-  { name: "Cloud", icon: FaCloud, color: "#00ADEF" },
+  { name: "TailwindCSS", icon: SiTailwindcss, color: "#06B6D4" },
+  { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
+  { name:"SQL", icon: SiMysql, color: "#00758F"},
+  { name: "WordPress", icon: FaWordpress, color: "#21759B" },
+  { name: "Shopify", icon: FaShopify, color: "#95A5A6" },
+  { name: "Vue.js", icon: RiVuejsFill, color: "#4FC08D" },
+  { name: "React", icon: FaReact, color: "#61DAFB" },
+  { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
 ]
 
 const TechStack = () => {

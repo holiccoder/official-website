@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Karan Shingde | AI Engineer & Innovator",
     description: "AI Engineer building intelligent solutions, AI agents, and ML applications.",
-    // url: "https://yourdomain.com", // Update this when you deploy
+    url: "https://yourdomain.com", // Update this when you deploy
     type: "website",
     images: "/app/assets/karan-front.png", // Local path for development
   },

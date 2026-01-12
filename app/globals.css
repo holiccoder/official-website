@@ -70,3 +70,7 @@
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
+
+.container {
+  max-width: 1280px;
+}

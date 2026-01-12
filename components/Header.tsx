@@ -26,9 +26,8 @@ const Header = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-background/80 backdrop-blur-md rounded-full shadow-lg py-2 px-6 flex items-center w-full max-w-4xl mx-auto justify-between"
+        className="bg-background/80 backdrop-blur-md rounded-full shadow-lg py-2 px-6 flex items-center w-full max-w-5xl mx-auto justify-between"
       >
-        {/* Mobile Menu Button - Left side in Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-2 rounded-full hover:bg-muted transition-colors"
@@ -44,9 +43,9 @@ const Header = () => {
 
         {/* Desktop Navigation - Centered */}
         <div className="hidden md:flex flex-1 justify-center">
-            { theme === 'dark' ? <Image src={WebsiteLightLogo} alt={'logo'} width={100} className={'mr-6'} />: <Image src={WebsiteLogo} alt={'logo'} width={100} className={'mr-6'} />}
+            { theme === 'dark' ? <Image src={WebsiteLightLogo} alt={'logo'} width={125} className={'mr-6'} />: <Image src={WebsiteLogo} alt={'logo'} width={125} className={'mr-6'} />}
           <nav className="flex items-center gap-8 text-sm md:text-base">
-            {menuItems.map((item) => (
+            {menuItems.map((item:string) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, "-").trim()}`}
@@ -79,7 +78,7 @@ const Header = () => {
             transition={{ duration: 0.3 }}
             className="absolute top-16 left-4 right-4 bg-background/90 backdrop-blur-md shadow-lg rounded-lg py-4 flex flex-col items-center space-y-4"
           >
-            {menuItems.map((item) => (
+            {menuItems.map((item:string) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, "-").trim()}`}

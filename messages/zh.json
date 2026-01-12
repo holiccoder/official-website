@@ -1,5 +1,149 @@
 {
   "home": {
-    "navigation": ["首页", "项目展示", "博客", "服务类型", "技术栈", "联系我们"]
+    "navigation": ["首页", "项目", "服务", "技术栈", "联系我们"],
+    "hero": {
+      "title": "<p>我们是一支才华横溢的团队</p><p class=\"mt-6\">致力于满足您的应用开发需求。</p>",
+      "initial": "我们",
+      "phrases": [
+        "开发 WordPress (WooCommerce) 主题",
+        "开发 WordPress (WooCommerce) 插件",
+        "开发 PHP 应用程序",
+        "开发移动应用程序",
+        "设计 SEO 策略",
+        "制作落地页",
+        "开发 AI 应用程序"
+      ],
+      "buttons": ["联系我们", "服务项目"]
+    },
+    "projects": {
+      "title": "项目展示",
+      "projects": [
+        {
+          "title": "AI 驱动的 WordPress 自动内容发布插件",
+          "description": "这是一个 WordPress 插件，用于通过 AI 驱动的 REST API 自动向 WordPress CMS 发布内容。",
+          "tags": ["PHP", "wordpress plugin", "AI", "content posting", "REST API"],
+          "image": "/projects/salesea-home-ja.png",
+          "github": "https://github.com/tycooninc/AI-Powered-WordPress-Automatic-Posting-content-Plugin",
+          "link": "https://nyaynidhi.com/",
+          "technologies": ["PHP", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "工厂类 WordPress 主题",
+          "description": "该主题专为工厂设计，具有高度可定制性，用户可以录入产品和新闻，客户可以通过 WordPress REST API 提交咨询和报价。",
+          "tags": ["PHP", "wordpress theme", "factory", "wordpress theme"],
+          "image": "/projects/lingyuevision.png",
+          "github": "https://github.com/tycooninc/A-highly-customizable-factory-wordpress-theme",
+          "link": "https://finohub.com/",
+          "technologies": ["PHP", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "基于 WordPress 和 NextJS 的指纹浏览器官网",
+          "description": "这是一个使用 WordPress 和 NextJS 构建的指纹浏览器官方网站。经过 SEO 优化并支持多语言，前端使用 NextJS，后端使用 WordPress REST API。",
+          "tags": ["PHP", "NextJS", "fingerprint browser", "product website"],
+          "image": "/projects/lalicat-homepage-ja.png",
+          "github": "https://github.com/tycooninc/A-Fingerprint-browser-official-website-using-wordpress-and-NextJS",
+          "link": "https://www.lalicat.com",
+          "technologies": ["PHP", "NextJS", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "WooCommerce 自定义支付网关插件",
+          "description": "这是一个 WooCommerce 的自定义支付网关插件，用于接受客户的付款。",
+          "tags": ["PHP", "wordpress", "woocommerce", "payment gateway", "product"],
+          "image": "/projects/woocommerce-payment-ja.png",
+          "link": "https://finohub.com/",
+          "github": "https://github.com/tycooninc/A-Woocommerce-Payment-Extension",
+          "technologies": ["PHP", "WooCommerce", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "Shopify Breeze 主题定制开发",
+          "description": "这是对 Shopify Breeze 主题进行的定制化开发与优化，旨在提升电商站点的性能与用户体验。",
+          "tags": ["PHP", "NextJS", "fingerprint browser", "product website"],
+          "image": "/projects/luxdrape-home-ja.png",
+          "link": "https://finohub.com/",
+          "github": "https://github.com/tycooninc/Shopify-Breeze-Theme-custom-development",
+          "technologies": ["PHP", "NextJS", "Wordpress", "REST API", "HTML"]
+        }
+      ]
+    },
+    "services": {
+      "title": "服务项目",
+      "services":  [
+        {
+          "title": "WordPress 开发",
+          "description": "我们开发 WordPress (WooCommerce) 主题和插件，构建 WordPress 网站并修复漏洞。在此过程中，我们特别注重 SEO 需求。",
+          "icon": "FaWordpress"
+        },
+        {
+          "title": "Web 开发",
+          "description": "如果您有特殊的应用想法，请告诉我们，我们将从零开始构建直到您满意。您的应用可以是网站，也可以是移动端 App。",
+          "icon": "FaCode"
+        },
+        {
+          "title": "Shopify 开发",
+          "description": "我们开发 Shopify 主题和应用，修复您现有的 Shopify 应用程序或开发定制化的 Shopify App。",
+          "icon": "FaShopify"
+        },
+        {
+          "title": "移动应用开发",
+          "description": "我们利用 JS 技术辅助移动应用开发，一套代码即可同时完成 iOS 和 Android 应用的构建。",
+          "icon": "FaMobile"
+        },
+        {
+          "title": "SEO 服务",
+          "description": "如果您需要在 Google、Yahoo 和百度等主流搜索引擎中获得排名，我们可以凭借专业的 SEO 知识助您一臂之力。",
+          "icon": "TbSeo"
+        },
+        {
+          "title": "网络爬虫",
+          "description": "我们使用 Python 进行网页抓取，并将数据导入您指定的数据库或转换为您所需的格式。",
+          "icon": "FaSpider"
+        }
+      ]
+    },
+    "techstacks": {
+      "title": "技术栈",
+      "skills": [
+        { "title": "PHP", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "WordPress", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Laravel", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "HTML", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "CSS", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Vue", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "React", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "NextJS", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Typescript", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Python", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "MySQL", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Magento", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Shopify", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Docker", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "AWS", "proficiency": "92", "icon": "fa-brands" }
+      ]
+    },
+    "contact": {
+      "title": "联系我们",
+      "info": [
+        "〒541-0057",
+        "ｔｙｃｏｏｎ株式会社",
+        "大阪府大阪市中央区",
+        "北久宝寺町２丁目６番",
+        "１０―４０６号"
+      ],
+      "socials": [
+        { "name": "邮件", "icon": "CiMail", "url": "mailto:karanshingde@gmail.com" },
+        { "name": "GitHub", "icon": "FaGithub", "url": "https://github.com/karan842" },
+        { "name": "LinkedIn", "icon": "FaLinkedin", "url": "https://linkedin.com/in/karanshingde" },
+        { "name": "Twitter", "icon": "FaXTwitter", "url": "https://twitter.com/kmeanskaran" },
+        { "name": "Medium", "icon": "FaMedium", "url": "https://medium.com/@karanshingde" },
+        { "name": "Instagram", "icon": "FaInstagram", "url": "https://instagram.com/kmeanskaran" }
+      ],
+      "email": "support@tycoon.pro",
+      "contact_form": {
+        "name": "姓名",
+        "email": "邮箱",
+        "message": "内容",
+        "send": "发送消息"
+      }
+    }
   }
 }

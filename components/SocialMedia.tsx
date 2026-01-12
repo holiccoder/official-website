@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaInstagram, FaLine } from "react-icons/fa"
 import { FaXTwitter, FaMedium } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 
@@ -12,6 +12,7 @@ const socialLinks = [
   { name: "Twitter", icon: FaXTwitter, url: "https://twitter.com/kmeanskaran" },
   { name: "Medium", icon: FaMedium, url: "https://medium.com/@karanshingde" },
   { name: "Instagram", icon: FaInstagram, url: "https://instagram.com/kmeanskaran" },
+  { name: "Line", icon: FaLine, url: "https://line.me/ti/p/~karan.shingde" }
 ]
 
 const SocialMedia = () => {

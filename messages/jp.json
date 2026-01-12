@@ -1,5 +1,149 @@
 {
   "home": {
-    "navigation": ["Home", "Experience", "Projects", "Services", "Tech Stack", "Contact"]
+    "navigation": ["ホーム", "プロジェクト", "サービス", "技術スタック", "お問い合わせ"],
+    "hero": {
+      "title": "<p>私たちは、お客様のアプリケーション開発ニーズに</p><p class=\"mt-6\">真摯に向き合うプロフェッショナル集団です。</p>",
+      "initial": "私たち",
+      "phrases": [
+        "WordPress (WooCommerce) テーマ開発",
+        "WordPress (WooCommerce) プラグイン開発",
+        "PHP アプリケーション開発",
+        "モバイルアプリケーション開発",
+        "SEO 戦略の設計",
+        "ランディングページ制作",
+        "AI アプリケーション開発"
+      ],
+      "buttons": ["お問い合わせ", "サービス内容"]
+    },
+    "projects": {
+      "title": "プロジェクト実績",
+      "projects": [
+        {
+          "title": "AI搭載型 WordPress 自動投稿プラグイン",
+          "description": "AI駆動のREST APIからWordPress CMSへコンテンツを自動投稿するためのプラグインです。",
+          "tags": ["PHP", "wordpress plugin", "AI", "content posting", "REST API"],
+          "image": "/projects/salesea-home-ja.png",
+          "github": "https://github.com/tycooninc/AI-Powered-WordPress-Automatic-Posting-content-Plugin",
+          "link": "https://nyaynidhi.com/",
+          "technologies": ["PHP", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "製造業向け高カスタマイズ WordPress テーマ",
+          "description": "工場・製造業向けのテーマです。高いカスタマイズ性を備え、製品やニュースの管理、REST APIを通じた見積依頼の送信が可能です。",
+          "tags": ["PHP", "wordpress theme", "factory", "wordpress theme"],
+          "image": "/projects/lingyuevision.png",
+          "github": "https://github.com/tycooninc/A-highly-customizable-factory-wordpress-theme",
+          "link": "https://finohub.com/",
+          "technologies": ["PHP", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "WordPress × NextJS 指紋ブラウザ公式サイト",
+          "description": "フロントエンドにNextJS、バックエンドにWordPress REST APIを採用した、SEO最適化済みの多言語対応公式サイトです。",
+          "tags": ["PHP", "NextJS", "fingerprint browser", "product website"],
+          "image": "/projects/lalicat-homepage-ja.png",
+          "github": "https://github.com/tycooninc/A-Fingerprint-browser-official-website-using-wordpress-and-NextJS",
+          "link": "https://www.lalicat.com",
+          "technologies": ["PHP", "NextJS", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "WooCommerce 独自決済ゲートウェイプラグイン",
+          "description": "WooCommerceで顧客からの決済を受け付けるためのカスタム決済ゲートウェイプラグインです。",
+          "tags": ["PHP", "wordpress", "woocommerce", "payment gateway", "product"],
+          "image": "/projects/woocommerce-payment-ja.png",
+          "link": "https://finohub.com/",
+          "github": "https://github.com/tycooninc/A-Woocommerce-Payment-Extension",
+          "technologies": ["PHP", "WooCommerce", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+        },
+        {
+          "title": "Shopify Breeze テーマ カスタム開発",
+          "description": "ShopifyのBreezeテーマをベースとしたカスタマイズ開発。パフォーマンスとユーザーエクスペリエンスの向上を実現しました。",
+          "tags": ["PHP", "NextJS", "fingerprint browser", "product website"],
+          "image": "/projects/luxdrape-home-ja.png",
+          "link": "https://finohub.com/",
+          "github": "https://github.com/tycooninc/Shopify-Breeze-Theme-custom-development",
+          "technologies": ["PHP", "NextJS", "Wordpress", "REST API", "HTML"]
+        }
+      ]
+    },
+    "services": {
+      "title": "サービス内容",
+      "services":  [
+        {
+          "title": "WordPress 開発",
+          "description": "WordPress（WooCommerce）のテーマやプラグインの開発、サイト構築、バグ修正を行います。SEO要件にも細心の注意を払っています。",
+          "icon": "FaWordpress"
+        },
+        {
+          "title": "Web 開発",
+          "description": "独自のアプリケーションのアイデアを形にします。Webサイトからモバイルアプリまで、ご満足いただけるまでゼロから構築いたします。",
+          "icon": "FaCode"
+        },
+        {
+          "title": "Shopify 開発",
+          "description": "Shopifyテーマやアプリの開発、既存アプリケーションの修正、または完全カスタムのShopifyアプリ開発を提供します。",
+          "icon": "FaShopify"
+        },
+        {
+          "title": "モバイルアプリ開発",
+          "description": "JS技術を活用し、iOSとAndroidの両方のアプリを単一のコードベースで効率的に開発します。",
+          "icon": "FaMobile"
+        },
+        {
+          "title": "SEO サービス",
+          "description": "Google、Yahoo、Baiduなどの主要検索エンジンでの上位表示を、当社の専門的なSEO知識でサポートします。",
+          "icon": "TbSeo"
+        },
+        {
+          "title": "ウェブスクレイピング",
+          "description": "Pythonを使用してデータを抽出し、ご希望のデータベースへのインポートや指定のフォーマットへの変換を行います。",
+          "icon": "FaSpider"
+        }
+      ]
+    },
+    "techstacks": {
+      "title": "技術スタック",
+      "skills": [
+        { "title": "PHP", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "WordPress", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Laravel", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "HTML", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "CSS", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Vue", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "React", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "NextJS", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Typescript", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Python", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "MySQL", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Magento", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Shopify", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "Docker", "proficiency": "92", "icon": "fa-brands" },
+        { "title": "AWS", "proficiency": "92", "icon": "fa-brands" }
+      ]
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "info": [
+        "〒541-0057",
+        "ｔｙｃｏｏｎ株式会社",
+        "大阪府大阪市中央区",
+        "北久宝寺町２丁目６番",
+        "１０―４０６号"
+      ],
+      "socials": [
+        { "name": "メール", "icon": "CiMail", "url": "mailto:karanshingde@gmail.com" },
+        { "name": "GitHub", "icon": "FaGithub", "url": "https://github.com/karan842" },
+        { "name": "LinkedIn", "icon": "FaLinkedin", "url": "https://linkedin.com/in/karanshingde" },
+        { "name": "Twitter", "icon": "FaXTwitter", "url": "https://twitter.com/kmeanskaran" },
+        { "name": "Medium", "icon": "FaMedium", "url": "https://medium.com/@karanshingde" },
+        { "name": "Instagram", "icon": "FaInstagram", "url": "https://instagram.com/kmeanskaran" }
+      ],
+      "email": "support@tycoon.pro",
+      "contact_form": {
+        "name": "お名前",
+        "email": "メールアドレス",
+        "message": "メッセージ内容",
+        "send": "メッセージを送信"
+      }
+    }
   }
 }

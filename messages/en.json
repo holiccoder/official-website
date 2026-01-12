@@ -1,5 +1,216 @@
 {
    "home": {
-      "navigation": ["Home", "Experience", "Projects", "Services", "Tech Stack", "Contact"]
+      "navigation": ["Home", "Projects", "Services", "Tech Stack", "Contact"],
+      "hero": {
+         "title": "<p>We are a talented team </p><p class=\"mt-6\">dedicated to your application development needs.</p>",
+         "initial": "We",
+         "phrases": [
+            "develop wordpress (woocommerce) themes",
+            "develop wordpress (woocommerce) plugins",
+            "develop PHP applications",
+            "develop mobile applications",
+            "design SEO strategies",
+            "Making landing pages",
+            "develop AI applications"
+         ],
+         "buttons": ["Contact Us", "Services"]
+      },
+      "projects": {
+         "title": "Projects",
+         "projects": [
+            {
+               "title": "AI Powered WordPress Automatic Posting content Plugin",
+               "description": "This is a wordpress plugin to automatically post contents to wordpress CMS from a AI powered resting api.",
+               "tags": ["PHP", "wordpress plugin", "AI", "content posting", "REST API"],
+               "image": "/projects/salesea-home-ja.png",
+               "github": "https://github.com/tycooninc/AI-Powered-WordPress-Automatic-Posting-content-Plugin",
+               "link": "https://nyaynidhi.com/",
+               "technologies": ["PHP", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+            },
+            {
+               "title": "A Factory Wordpress Theme",
+               "description": "This theme is dedicated to a factory, it is highly customizable, user can enter products and news, clients can submit inquiries and quotes through wordpress rest API",
+               "tags": ["PHP", "wordpress theme", "factory", "wordpress theme"],
+               "image": "/projects/lingyuevision.png",
+               "github": "https://github.com/tycooninc/A-highly-customizable-factory-wordpress-theme",
+               "link": "https://finohub.com/",
+               "technologies": ["PHP", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+            },
+            {
+               "title": "A Fingerprint browser official website using wordpress and NextJS",
+               "description": "This is a fingerprint browser official website using wordpress and NextJS. It is SEO optimized and multilingual, frontend is using NextJS, backend is using wordpress RestAPI.",
+               "tags": ["PHP", "NextJS", "fingerprint browser", "product website"],
+               "image": "/projects/lalicat-homepage-ja.png",
+               "github": "https://github.com/tycooninc/A-Fingerprint-browser-official-website-using-wordpress-and-NextJS",
+               "link": "https://www.lalicat.com",
+               "technologies": ["PHP", "NextJS", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+            },
+            {
+               "title": "A woocommerce custom payment gateway plugin",
+               "description": "This is a woocommerce custom payment gateway plugin. It is a plugin for woocommerce, it is used to accept payments from customers.",
+               "tags": ["PHP", "wordpress", "woocommerce", "payment gateway", "product"],
+               "image": "/projects/woocommerce-payment-ja.png",
+               "link": "https://finohub.com/",
+               "github": "https://github.com/tycooninc/A-Woocommerce-Payment-Extension",
+               "technologies": ["PHP", "WooCommerce", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
+            },
+            {
+               "title": "Shopify Breeze Theme custom development",
+               "description": "This is a fingerprint browser official website using wordpress and NextJS. It is SEO optimized and multilingual, frontend is using NextJS, backend is using wordpress RestAPI.",
+               "tags": ["PHP", "NextJS", "fingerprint browser", "product website"],
+               "image": "/projects/luxdrape-home-ja.png",
+               "link": "https://finohub.com/",
+               "github": "https://github.com/tycooninc/Shopify-Breeze-Theme-custom-development",
+               "technologies": ["PHP", "NextJS", "Wordpress", "REST API", "HTML"]
+            }
+         ]
+      },
+      "services": {
+         "title": "Services",
+         "services":  [
+            {
+               "title": "Wordpress Development",
+               "description":
+               "We develop wordpress (woocommerce) themes and plugins, build wordpress websites and fix bugs. In doing so, we pay attention to SEO requirements.",
+               "icon": "FaWordpress"
+            },
+            {
+               "title": "Web Development",
+               "description":
+               "If you have a special application idea, please tell us and we will build it from scratch until you satisfy. Your application can be both website and mobile apps.",
+               "icon": "FaCode"
+            },
+            {
+               "title": "Shopify Development",
+               "description":
+               "We develop shopify themes and apps, fix your existing shopify applications or develop custom shopify apps.",
+               "icon": "FaShopify"
+            },
+            {
+               "title": "Mobile App Development",
+               "description":
+               "We use JS technology to assist in our mobile app development, both IOS and Android apps can be done in one codebase.",
+               "icon": "FaMobile"
+            },
+            {
+               "title": "SEO Service",
+               "description":
+               "If you need to rank in major search engines like google, yahoo and baidu, we can help you rank with our special knowledge about SEO.",
+               "icon": "TbSeo"
+            },
+            {
+               "title": "Web Scraping",
+               "description":
+               "We use python for web scraping and import into your desired database or convert it to your desired format.",
+               "icon": "FaSpider"
+            }
+         ]
+      },
+      "techstacks": {
+         "title": "Tech Stacks",
+         "skills": [
+            {
+               "title": "PHP",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "WordPress",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "Laravel",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "HTML",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "CSS",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "Vue",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "React",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "NextJS",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "Typescript",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "Python",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "MySQL",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "Magento",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "Shopify",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "Docker",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            },
+            {
+               "title": "AWS",
+               "proficiency": "92",
+               "icon": "fa-brands"
+            }
+         ]
+      },
+
+      "contact": {
+         "title": "Contact Us",
+         "info": [
+            "〒541-0057",
+            "ｔｙｃｏｏｎ株式会社",
+            "大阪府大阪市中央区",
+            "北久宝寺町２丁目６番",
+            "１０―４０６号"
+         ],
+         "socials": [
+            { "name": "Mail", "icon": "CiMail", "url": "mailto:karanshingde@gmail.com" },
+            { "name": "GitHub", "icon": "FaGithub", "url": "https://github.com/karan842" },
+            { "name": "LinkedIn", "icon": "FaLinkedin", "url": "https://linkedin.com/in/karanshingde" },
+            { "name": "Twitter", "icon": "FaXTwitter", "url": "https://twitter.com/kmeanskaran" },
+            { "name": "Medium", "icon": "FaMedium", "url": "https://medium.com/@karanshingde" },
+            { "name": "Instagram", "icon": "FaInstagram", "url": "https://instagram.com/kmeanskaran" }
+         ],
+         "email": "support@tycoon.pro",
+         "contact_form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send Message"
+         }
+      }
    }
 }
