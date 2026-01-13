@@ -39,7 +39,7 @@ export default function LanguageSwitcher() {
                 className="flex items-center gap-2 border border-gray-100 rounded-lg p-2 bg-white hover:bg-gray-50 transition-all"
             >
                 <Image src={currentLang.flag} alt="" width={20} height={15} className="rounded-sm" />
-                <span className="text-sm font-medium">{currentLang.name}</span>
+                <span className="text-sm font-medium hidden md:block">{currentLang.name}</span>
                 <span className={`text-[10px] transition-transform ${isOpen ? 'rotate-180' : ''}`}>▼</span>
             </button>
 

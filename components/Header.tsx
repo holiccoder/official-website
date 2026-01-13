@@ -26,24 +26,20 @@ const Header = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-background/80 backdrop-blur-md rounded-full shadow-lg py-2 px-6 flex items-center w-full max-w-5xl mx-auto justify-between"
+        className="bg-background/80 backdrop-blur-md rounded-full shadow-lg py-2 px-2 flex items-center w-full max-w-5xl mx-auto justify-between"
       >
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded-full hover:bg-muted transition-colors"
+          className="md:hidden p-2 rounded-full hover:bg-muted transition-colors mr-6"
           aria-label="Toggle menu"
         >
           {isOpen ? <HiOutlineX size={24} /> : <HiOutlineMenu size={24} />}
         </button>
 
-        {/* Mobile "K-Means Karan" Text - Centered between the hamburger menu and theme toggle */}
-        <div className="flex-1 md:hidden text-center">
-          <span className="font-mono text-lg text-gray-800 dark:text-gray-200">K-Means Karan</span>
-        </div>
+        { theme === 'dark' ? <Image src={WebsiteLightLogo} alt={'logo'} width={106} className={'mr-6'} />: <Image src={WebsiteLogo} alt={'logo'} width={106} className={'mr-6'} />}
 
-        {/* Desktop Navigation - Centered */}
         <div className="hidden md:flex flex-1 justify-center">
-            { theme === 'dark' ? <Image src={WebsiteLightLogo} alt={'logo'} width={125} className={'mr-6'} />: <Image src={WebsiteLogo} alt={'logo'} width={125} className={'mr-6'} />}
+      
           <nav className="flex items-center gap-8 text-sm md:text-base">
             {menuItems.map((item:string) => (
               <a
@@ -55,9 +51,9 @@ const Header = () => {
               </a>
             ))}
           </nav>
-          <LanguageSwitcher />
+          
         </div>
-
+         <LanguageSwitcher />
 
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

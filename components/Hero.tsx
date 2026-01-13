@@ -22,8 +22,8 @@ const Hero = () => {
   const t = useTranslations('home');
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="text-center flex gap-4 z-10 items-center">
+    <section id="home" className="min-h-screen pt-28 flex items-center justify-center relative overflow-hidden">
+      <div className="text-center flex flex-col md:flex-row gap-4 z-10 items-center mx-8">
 
         <div>
 
@@ -31,7 +31,7 @@ const Hero = () => {
               initial={{opacity: 0, y: -20}}
               animate={{opacity: 1, y: 0}}
               transition={{duration: 0.5}}
-              className="text-5xl md:text-4xl font-bold mb-4 flex items-center justify-center"
+              className="text-xl md:text-4xl font-bold mb-4 flex items-center justify-center"
           >
             <div dangerouslySetInnerHTML={{__html: t.raw('hero.title')}}/>
           </motion.h1>
@@ -41,7 +41,7 @@ const Hero = () => {
               initial={{opacity: 0, y: -20}}
               animate={{opacity: 1, y: 0}}
               transition={{duration: 0.8, delay: 0.1}}
-              className="text-xl md:text-2xl mb-8 h-16 flex justify-center items-center"
+              className="text-xl md:text-2xl mb-8 h-16 flex flex-col md:flex-row justify-center items-center"
           >
             <span className="mr-2">{t('hero.initial')}</span>
             <TypedText phrases={t.raw('hero.phrases')}/>

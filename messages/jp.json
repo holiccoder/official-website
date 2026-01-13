@@ -2,8 +2,8 @@
   "home": {
     "navigation": ["ホーム", "プロジェクト", "サービス", "技術スタック", "お問い合わせ"],
     "hero": {
-      "title": "<p>私たちは、お客様のアプリケーション開発ニーズに</p><p class=\"mt-6\">真摯に向き合うプロフェッショナル集団です。</p>",
-      "initial": "私たち",
+      "title": "<p>私たちTYCOONは、お客様のアプリケーション開発ニーズに</p><p class=\"mt-6\">真摯に向き合うプロフェッショナル集団です。</p>",
+      "initial": "私たちのサービス",
       "phrases": [
         "WordPress (WooCommerce) テーマ開発",
         "WordPress (WooCommerce) プラグイン開発",
@@ -46,8 +46,8 @@
           "technologies": ["PHP", "NextJS", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
         },
         {
-          "title": "WooCommerce 独自決済ゲートウェイプラグイン",
-          "description": "WooCommerceで顧客からの決済を受け付けるためのカスタム決済ゲートウェイプラグインです。",
+          "title": "WooCommerce向けのカスタム決済ゲートウェイプラグイン",
+          "description": "本プラグインを導入することで、WooCommerceサイト上で顧客からの決済を直接受けることが可能になります。",
           "tags": ["PHP", "wordpress", "woocommerce", "payment gateway", "product"],
           "image": "/projects/woocommerce-payment-ja.png",
           "link": "https://finohub.com/",
@@ -55,8 +55,8 @@
           "technologies": ["PHP", "WooCommerce", "Wordpress", "REST API", "HTML", "CSS", "Javascript"]
         },
         {
-          "title": "Shopify Breeze テーマ カスタム開発",
-          "description": "ShopifyのBreezeテーマをベースとしたカスタマイズ開発。パフォーマンスとユーザーエクスペリエンスの向上を実現しました。",
+          "title": "Shopify Breezeテーマのカスタム開発",
+          "description": "Shopify Breeze テーマをベースとしたカスタム開発により、ECサイトのパフォーマンス及びユーザー体験を最適化するサービスです。",
           "tags": ["PHP", "NextJS", "fingerprint browser", "product website"],
           "image": "/projects/luxdrape-home-ja.png",
           "link": "https://finohub.com/",
