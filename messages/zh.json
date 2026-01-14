@@ -1,6 +1,6 @@
 {
   "home": {
-    "navigation": ["首页", "项目", "服务", "技术栈", "联系我们"],
+    "navigation": {"home":"首页", "projects": "项目",  "services": "服务", "tech": "技术栈", "contact": "联系"},
     "hero": {
       "title": "<p>我们是一支才华横溢的团队</p><p class=\"mt-6\">致力于满足您的应用开发需求。</p>",
       "initial": "我们",

@@ -17,11 +17,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const t = useTranslations('home');
-
-  const menuItems = t.raw('navigation');
+  const menuItems: { [key: string]: string } = t.raw('navigation')
 
     return (
-    <div className="fixed top-0 left-0 right-0 flex justify-center z-50 pt-4 px-4">
+    <div className="fixed top-0 left-0 right-0 flex justify-center z-50 pt-4 px-8">
       <motion.header
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -39,26 +38,27 @@ const Header = () => {
         { theme === 'dark' ? <Image src={WebsiteLightLogo} alt={'logo'} width={106} className={'mr-6'} />: <Image src={WebsiteLogo} alt={'logo'} width={106} className={'mr-6'} />}
 
         <div className="hidden md:flex flex-1 justify-center">
-      
+
           <nav className="flex items-center gap-8 text-sm md:text-base">
-            {menuItems.map((item:string) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, "-").trim()}`}
+
+            {Object.entries(menuItems).map(([key, value]) => (
+            <a
+                key={key}
+                href={`#${key}`}
                 className="text-gray-800 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-mono"
-              >
-                {item}
-              </a>
+            >
+              {value}
+            </a>
             ))}
           </nav>
-          
+
         </div>
-         <LanguageSwitcher />
+        <LanguageSwitcher/>
 
         <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="p-2 md:ml-2 ml-auto rounded-full hover:bg-muted transition-colors"
-          aria-label="Toggle dark mode"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="p-2 md:ml-2 ml-auto rounded-full hover:bg-muted transition-colors"
+            aria-label="Toggle dark mode"
         >
           {theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
         </button>
@@ -74,14 +74,14 @@ const Header = () => {
             transition={{ duration: 0.3 }}
             className="absolute top-16 left-4 right-4 bg-background/90 backdrop-blur-md shadow-lg rounded-lg py-4 flex flex-col items-center space-y-4"
           >
-            {menuItems.map((item:string) => (
+            {Object.entries(menuItems).map(([key, value]) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, "-").trim()}`}
+                key={key}
+                href={`#${key}`}
                 className="text-lg font-mono text-gray-800 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                {item}
+                {value}
               </a>
             ))}
           </motion.div>

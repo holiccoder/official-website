@@ -28,7 +28,7 @@ const TechStack = () => {
   const { theme } = useTheme()
 
   return (
-    <section id="tech-stack" className="py-20">
+    <section id="tech" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Tech Stack</h2>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">

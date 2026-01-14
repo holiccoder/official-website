@@ -1,6 +1,6 @@
 {
    "home": {
-      "navigation": ["Home", "Projects", "Services", "Tech Stack", "Contact"],
+      "navigation": {"home":"Home", "projects": "Projects",  "services": "Services", "tech": "Tech Stack", "contact": "Contact"},
       "hero": {
          "title": "<p>We are a talented team </p><p class=\"mt-6\">dedicated to your application development needs.</p>",
          "initial": "We",
