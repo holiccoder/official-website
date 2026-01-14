@@ -9,21 +9,21 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 
 export const metadata = {
-  title: "Karan Shingde | AI Engineer & Innovator",
+  title: "Tycoon | Your Trusted Outsourcer",
   description: "AI Engineer building intelligent solutions, AI agents, and ML applications.",
-  keywords: "AI Engineer, Machine Learning, Generative AI Specialist, AI Consultant, Karan Shingde",
+  keywords: "AI Engineer, Machine Learning, Generative AI Specialist, AI Consultant, Tycoon",
   openGraph: {
-    title: "Karan Shingde | AI Engineer & Innovator",
+    title: "Tycoon | Your Trusted Outsourcer",
     description: "AI Engineer building intelligent solutions, AI agents, and ML applications.",
-    url: "https://yourdomain.com", // Update this when you deploy
+    url: "https://tycoon.pro", // Update this when you deploy
     type: "website",
-    images: "/app/assets/karan-front.png", // Local path for development
+    images: "/app/assets/icon.png", // Local path for development
   },
   twitter: {
     card: "summary_large_image",
-    title: "Karan Shingde | AI Engineer & Innovator",
+    title: "Tycoon | Your Trusted Outsourcer",
     description: "AI Engineer building intelligent solutions, AI agents, and ML applications.",
-    images: "/app/assets/karan-front.png", // Local path for development
+    images: "/app/assets/icon.png", // Local path for development
   }
 };
 
