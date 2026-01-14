@@ -32,11 +32,11 @@ export default function LanguageSwitcher() {
     const currentLang = languages[locale] || languages['en'];
 
     return (
-        <div className="relative ml-6 inline-block text-left">
+        <div className="relative ml-6 inline-block text-left dark:bg-black">
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="flex items-center gap-2 border border-gray-100 rounded-lg p-2 bg-white hover:bg-gray-50 transition-all"
+                className="flex items-center gap-2 border border-gray-100 rounded-lg p-2 bg-white hover:bg-gray-50 transition-all dark:bg-black"
             >
                 <Image src={currentLang.flag} alt="" width={20} height={15} className="rounded-sm" />
                 <span className="text-sm font-medium hidden md:block">{currentLang.name}</span>
