@@ -5,6 +5,7 @@ import { useTheme } from "next-themes"
 import { FaPython, FaHtml5, FaCss3Alt, FaWordpress, FaShopify, FaReact } from "react-icons/fa"
 import { SiTypescript, SiNextdotjs, SiLaravel, SiMysql, SiGraphql, SiTailwindcss } from "react-icons/si"
 import { RiJavascriptFill, RiPhpFill, RiVuejsFill } from "react-icons/ri";
+import { useState, useEffect } from "react";
 
 const techStack = [
   { name: "HTML", icon: FaHtml5, color: "#E34F26" },
@@ -26,6 +27,15 @@ const techStack = [
 
 const TechStack = () => {
   const { theme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <section id="tech" className="py-20">

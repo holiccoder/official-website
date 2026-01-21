@@ -10,14 +10,23 @@ import WebsiteLogo from '@/app/assets/logo-cornflower-blue.png'
 import WebsiteLightLogo from '@/app/assets/logo-light.png'
 import {useTranslations} from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useEffect } from "react";
 
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
   const t = useTranslations('home');
   const menuItems: { [key: string]: string } = t.raw('navigation')
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
     return (
     <div className="fixed top-0 left-0 right-0 flex justify-center z-50 pt-4 px-8">
